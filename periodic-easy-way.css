@@ -420,14 +420,14 @@ header {
   border: 1px solid black;
   padding: 0.2rem;
 
-  /*Its important to set the position to relative as the element number container (a p element that is created using a script 
+  /*Its important to set the position to relative as the element number container (a span element that is created using a script 
     during run time and attached to this div grid item) that holds the element number will be within this
     grid item container and its position will be set to absolute so that its displayed at the top left corner of this grid item 
     container */
   position: relative;
 }
 
-/* class assigned with javascript during run time, its assigned to a p element that will contain the periodic number of the element*/
+/* class assigned with javascript during run time, its assigned to a span element that will contain the periodic number of the element*/
 .element-number {
   padding: 0px;
   margin: 0px;

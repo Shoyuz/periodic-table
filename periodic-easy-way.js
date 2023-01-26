@@ -10374,6 +10374,8 @@ function createPeriodicTable() {
 
     //ELEMENT DIVS
     let elementDiv = document.createElement("div");
+    //ASSING A CLASS TO THE ELEMENT DIV WHOSE CLASSNAME IS THE SAME AS THE SYMBOL OF THE ELEMENT, THIS WILL BE USED TO
+    //ASSIGN THE GRID AREAS
     elementDiv.classList.add(symbol);
 
     //ASSIGN CLASSES TO EACH ELEMENT DIV BASED ON THEIR BLOCK FOR COLOR STYLING
