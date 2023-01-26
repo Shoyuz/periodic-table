@@ -1,0 +1,528 @@
+/* Periodic Table Reference - https://en.wikipedia.org/wiki/Periodic_table */
+
+body {
+  background-color: #333;
+}
+
+a {
+  color: white;
+}
+
+/* Main Header CSS */
+header {
+  color: red;
+  text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* MAIN PERIODIC TABLE GRID */
+#grid {
+  display: grid;
+
+  grid-template: repeat(auto-fit, minmax(20px, 1fr)) / repeat(
+      auto-fit,
+      minmax(20px, 1fr)
+    );
+  /* border: 3px solid blue; */
+  padding: 10px;
+  gap: 2px;
+
+  grid-template-areas:
+    "H . . . . . . . . . . . . . . . . He"
+    "Li Be . . . . . . . . . . B C N O F Ne"
+    "Na Mg . . . . . . . . . . Al Si P S Cl Ar"
+    "K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr"
+    "Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe"
+    "Cs Ba Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn"
+    "Fr Ra Lr Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og"
+    ". . . La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb ."
+    ". . . Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No .";
+}
+
+/* GRIDS AREAS */
+.H {
+  grid-area: H;
+}
+
+.He {
+  grid-area: He;
+}
+
+.Li {
+  grid-area: Li;
+}
+.Be {
+  grid-area: Be;
+}
+.B {
+  grid-area: B;
+}
+.C {
+  grid-area: C;
+}
+.N {
+  grid-area: N;
+}
+.O {
+  grid-area: O;
+}
+.F {
+  grid-area: F;
+}
+.Ne {
+  grid-area: Ne;
+}
+
+.Na {
+  grid-area: Na;
+}
+.Mg {
+  grid-area: Mg;
+}
+.Al {
+  grid-area: Al;
+}
+.Si {
+  grid-area: Si;
+}
+.P {
+  grid-area: P;
+}
+.S {
+  grid-area: S;
+}
+.Cl {
+  grid-area: Cl;
+}
+.Ar {
+  grid-area: Ar;
+}
+
+.K {
+  grid-area: K;
+}
+.Ca {
+  grid-area: Ca;
+}
+.Sc {
+  grid-area: Sc;
+}
+.Ti {
+  grid-area: Ti;
+}
+.V {
+  grid-area: V;
+}
+.Cr {
+  grid-area: Cr;
+}
+.Mn {
+  grid-area: Mn;
+}
+.Fe {
+  grid-area: Fe;
+}
+.Co {
+  grid-area: Co;
+}
+.Ni {
+  grid-area: Ni;
+}
+.Cu {
+  grid-area: Cu;
+}
+.Zn {
+  grid-area: Zn;
+}
+.Ga {
+  grid-area: Ga;
+}
+.Ge {
+  grid-area: Ge;
+}
+.As {
+  grid-area: As;
+}
+.Se {
+  grid-area: Se;
+}
+.Br {
+  grid-area: Br;
+}
+.Kr {
+  grid-area: Kr;
+}
+
+.Rb {
+  grid-area: Rb;
+}
+.Sr {
+  grid-area: Sr;
+}
+.Y {
+  grid-area: Y;
+}
+.Zr {
+  grid-area: Zr;
+}
+.Nb {
+  grid-area: Nb;
+}
+.Mo {
+  grid-area: Mo;
+}
+.Tc {
+  grid-area: Tc;
+}
+.Ru {
+  grid-area: Ru;
+}
+.Rh {
+  grid-area: Rh;
+}
+.Pd {
+  grid-area: Pd;
+}
+.Ag {
+  grid-area: Ag;
+}
+.Cd {
+  grid-area: Cd;
+}
+.In {
+  grid-area: In;
+}
+.Sn {
+  grid-area: Sn;
+}
+.Sb {
+  grid-area: Sb;
+}
+.Te {
+  grid-area: Te;
+}
+.I {
+  grid-area: I;
+}
+.Xe {
+  grid-area: Xe;
+}
+
+.Cs {
+  grid-area: Cs;
+}
+.Ba {
+  grid-area: Ba;
+}
+.Hf {
+  grid-area: Hf;
+}
+.Ta {
+  grid-area: Ta;
+}
+.W {
+  grid-area: W;
+}
+.Re {
+  grid-area: Re;
+}
+.Os {
+  grid-area: Os;
+}
+.Ir {
+  grid-area: Ir;
+}
+.Pt {
+  grid-area: Pt;
+}
+.Au {
+  grid-area: Au;
+}
+.Hg {
+  grid-area: Hg;
+}
+.Tl {
+  grid-area: Tl;
+}
+.Pb {
+  grid-area: Pb;
+}
+.Bi {
+  grid-area: Bi;
+}
+.Po {
+  grid-area: Po;
+}
+.At {
+  grid-area: At;
+}
+.Rn {
+  grid-area: Rn;
+}
+
+.Fr {
+  grid-area: Fr;
+}
+.Ra {
+  grid-area: Ra;
+}
+.Rf {
+  grid-area: Rf;
+}
+.Db {
+  grid-area: Db;
+}
+.Sg {
+  grid-area: Sg;
+}
+.Bh {
+  grid-area: Bh;
+}
+.Hs {
+  grid-area: Hs;
+}
+.Mt {
+  grid-area: Mt;
+}
+.Ds {
+  grid-area: Ds;
+}
+.Rg {
+  grid-area: Rg;
+}
+.Cn {
+  grid-area: Cn;
+}
+.Nh {
+  grid-area: Nh;
+}
+.Fl {
+  grid-area: Fl;
+}
+.Mc {
+  grid-area: Mc;
+}
+.Lv {
+  grid-area: Lv;
+}
+.Ts {
+  grid-area: Ts;
+}
+.Og {
+  grid-area: Og;
+}
+
+.La {
+  grid-area: La;
+}
+.Ce {
+  grid-area: Ce;
+}
+.Pr {
+  grid-area: Pr;
+}
+.Nd {
+  grid-area: Nd;
+}
+.Pm {
+  grid-area: Pm;
+}
+.Sm {
+  grid-area: Sm;
+}
+.Eu {
+  grid-area: Eu;
+}
+.Gd {
+  grid-area: Gd;
+}
+.Tb {
+  grid-area: Tb;
+}
+.Dy {
+  grid-area: Dy;
+}
+.Ho {
+  grid-area: Ho;
+}
+.Er {
+  grid-area: Er;
+}
+.Tm {
+  grid-area: Tm;
+}
+.Yb {
+  grid-area: Yb;
+}
+.Lu {
+  grid-area: Lu;
+}
+
+.Ac {
+  grid-area: Ac;
+}
+.Th {
+  grid-area: Th;
+}
+.Pa {
+  grid-area: Pa;
+}
+.U {
+  grid-area: U;
+}
+.Np {
+  grid-area: Np;
+}
+.Pu {
+  grid-area: Pu;
+}
+.Am {
+  grid-area: Am;
+}
+.Cm {
+  grid-area: Cm;
+}
+.Bk {
+  grid-area: Bk;
+}
+.Cf {
+  grid-area: Cf;
+}
+.Es {
+  grid-area: Es;
+}
+.Fm {
+  grid-area: Fm;
+}
+.Md {
+  grid-area: Md;
+}
+.No {
+  grid-area: No;
+}
+.Lr {
+  grid-area: Lr;
+}
+
+/* MAIN GRID ITEMS CSS */
+#grid > div {
+  /* Centre the contents within the grid items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.2rem;
+  height: 30px;
+  font-weight: bold;
+  flex-flow: wrap;
+  border: 1px solid black;
+  padding: 0.2rem;
+
+  /*Its important to set the position to relative as the element number container (a p element that is created using a script 
+    during run time and attached to this div grid item) that holds the element number will be within this
+    grid item container and its position will be set to absolute so that its displayed at the top left corner of this grid item 
+    container */
+  position: relative;
+}
+
+/* class assigned with javascript during run time, its assigned to a p element that will contain the periodic number of the element*/
+.element-number {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 10px;
+  color: red;
+}
+
+.element-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 30px; */
+}
+
+.element-name {
+  font-size: 0.6rem;
+  color: black;
+}
+
+.s-block {
+  background-color: #ff9999;
+}
+
+.f-block {
+  background-color: #98ff99;
+}
+.d-block {
+  background-color: #99ccff;
+}
+.p-block {
+  background-color: #fdff8c;
+}
+
+/*Hide the Periodic Table Grid and its main header when the broswer width shrinks to 450px and below  */
+@media screen and (max-width: 450px) {
+  h1 {
+    display: none;
+  }
+
+  #grid {
+    display: none;
+  }
+}
+
+/* FALL BACK IMAGE TO DISPLAY WHEN THE SCREEN SIZE SHRINKS TO BELOW 451px */
+/* THE MAIN PERIODIC TABLE GRID WILL DISAPPEAR AND THE IMAGE WILL BE DISPLAYED */
+
+/* Hide the fall back image grid */
+#fallback-image-grid {
+  display: none;
+}
+
+/* Display the fall back image when the view port shrinks to below 451px */
+@media screen and (max-width: 1150px) {
+  .element-name {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .element-name {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  #fallback-image-grid {
+    display: grid;
+    grid-template: auto/auto;
+    border: 2px solid blue;
+    margin-top: 50%;
+    margin-bottom: auto;
+  }
+
+  /* centre the image within the grid item container */
+  #fallback-image-grid > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* set the image to scale up to take all the available height and width within its container */
+  .periodic-image {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Style break, hide the periodic table numbers when screen width shrinks to 500px and below*/
+@media screen and (max-width: 500px) {
+  .element-number {
+    display: none;
+  }
+}
